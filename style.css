@@ -1,0 +1,195 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* BODY + DARK BACKGROUND */
+
+body{
+font-family:Arial, sans-serif;
+
+/* Background image */
+background-image:url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:white;
+}
+
+/* DARK OVERLAY */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+z-index:-1;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.name{
+font-size:60px;
+letter-spacing:3px;
+font-weight:bold;
+}
+
+.hero h2{
+font-size:28px;
+margin-top:10px;
+}
+
+.intro{
+max-width:600px;
+margin:20px auto;
+font-size:18px;
+}
+
+/* BUTTON */
+
+button{
+padding:12px 30px;
+border:none;
+background:#00bcd4;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#0097a7;
+transform:scale(1.05);
+}
+
+
+/* SERVICES SECTION */
+
+.services_intro{
+background:white;
+color:black;
+text-align:center;
+padding:60px 20px;
+}
+
+.services_intro h2{
+margin-bottom:15px;
+}
+
+
+/* SKILLS TITLE */
+
+.title{
+text-align:center;
+margin-top:50px;
+font-size:32px;
+}
+
+
+/* GRID */
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+width:85%;
+margin:40px auto;
+}
+
+
+/* CARD */
+
+.card{
+background:white;
+color:black;
+padding:20px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+
+padding-top:120px;
+
+/* IMAGE SETTINGS */
+background-repeat:no-repeat;
+background-position:center 25px;
+background-size:70px;
+
+transition:0.4s;
+}
+
+/* HOVER EFFECT */
+
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+box-shadow:0 15px 30px rgba(0,0,0,0.6);
+}
+
+
+/* CARD IMAGES (FROM LINKS) */
+
+.java{
+background-image:url("https://cdn-icons-png.flaticon.com/512/226/226777.png");
+}
+
+.python{
+background-image:url("https://cdn-icons-png.flaticon.com/512/5968/5968350.png");
+}
+
+.c{
+background-image:url("https://cdn-icons-png.flaticon.com/512/6132/6132222.png");
+}
+
+.cpp{
+background-image:url("https://cdn-icons-png.flaticon.com/512/6132/6132221.png");
+}
+
+.swift{
+background-image:url("https://cdn-icons-png.flaticon.com/512/732/732250.png");
+}
+
+.uiux{
+background-image:url("https://cdn-icons-png.flaticon.com/512/1055/1055687.png");
+}
+
+
+/* FOOTER */
+
+footer{
+background:#111;
+padding:50px 0;
+margin-top:60px;
+}
+
+.footer_container{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+gap:20px;
+width:85%;
+margin:auto;
+}
+
+footer h3{
+margin-bottom:10px;
+}
+
+footer a{
+color:#4db8ff;
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
